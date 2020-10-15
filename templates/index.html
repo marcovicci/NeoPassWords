@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Explore trends in passwords used for Neopets.com." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='screen.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>NEOPASSWORDS</title>
+  </head>
+  <body>
+      <div id="sidebar">
+        <h2>NEO<br>PASS<br>WORDS</h2>
+  <span id="home"><a>HOME</a></span>
+  <span id="random"><a>RANDOM PASSWORDS</a></span>
+  <form id="search" method="POST" onkeydown="return event.key != 'Enter';"><input id="searchterm" type="text" placeholder="SEARCH" /><a id=go>GO</a></form>
+  <br><div id="about">Around 1.2 million leaked Neopets passwords, sorted for your pleasure.<br><br>
+  Homepage: most popular<br><br>
+  Random: just what you'd think<br><br>
+  Search: try your luck!<br><br>
+(Hover for exact password counts)</div>
+      </div>
+      <div id="content">
+        <h2>hello world</h2>
+        <span class="pw" alt="Password used [COUNT] times">[PASS]</a>
+      </div>
+
+      <script src="{{ url_for('static', filename='js.js') }}">
+
+      </script>
+  </body>
+</html>
